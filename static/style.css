@@ -1,0 +1,34 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; font-family: Arial, sans-serif; background: #f3f6fb; color: #253247; }
+.container { max-width: 1150px; margin: 0 auto; }
+.narrow { max-width: 720px; }
+header { margin-bottom: 24px; }
+header h1 { margin-bottom: 6px; }
+header p, .hint { color: #68758a; }
+.card { background: #fff; padding: 22px; margin: 18px 0; border-radius: 12px; box-shadow: 0 3px 14px #1a2b4b12; }
+h1, h2 { color: #203b60; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+input { width: 100%; min-width: 0; padding: 11px 12px; border: 1px solid #ccd5e1; border-radius: 6px; font-size: 14px; }
+button, .button { display: inline-block; border: 0; border-radius: 6px; padding: 10px 14px; background: #1769aa; color: white; text-decoration: none; font-size: 14px; cursor: pointer; }
+button:hover, .button:hover { opacity: .9; }
+.secondary { background: #68758a; }
+.danger { background: #c93640; }
+.small { padding: 7px 10px; }
+.search-form { display: flex; gap: 8px; }
+.search-form input { flex: 1; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; white-space: nowrap; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e4e9f0; }
+th { background: #203b60; color: #fff; }
+tbody tr:hover { background: #f7f9fc; }
+.actions { display: flex; gap: 7px; align-items: center; }
+.actions form { margin: 0; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.message { padding: 12px; border-radius: 6px; margin: 10px 0; background: #e3f6e9; }
+.message.error { background: #ffe6e6; color: #8d2020; }
+.empty { text-align: center; color: #68758a; padding: 24px; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.stat { padding: 18px; border-radius: 8px; background: #eef4fb; display: flex; flex-direction: column; gap: 10px; }
+.stat span { color: #68758a; }
+.stat strong { font-size: 26px; color: #1769aa; }
+@media (max-width: 650px) { body { padding: 12px; } .form-grid, .stats { grid-template-columns: 1fr; } .search-form, .section-heading { align-items: stretch; flex-direction: column; } .card { padding: 16px; } }
